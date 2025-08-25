@@ -1,5 +1,5 @@
 // find nth Fibonacci No.
-public class recursion_1 {
+public class fibonacciByRecursion {
     //function declare
     static int fibo(int n)
     {
