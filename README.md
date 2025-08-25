@@ -1,5 +1,5 @@
 📘 DSA Repository
-<p align="center"> <img src="https://img.shields.io/github/stars/your-username/your-repo-name?style=for-the-badge" /> <img src="https://img.shields.io/github/forks/your-username/your-repo-name?style=for-the-badge" /> <img src="https://img.shields.io/github/issues/your-username/your-repo-name?style=for-the-badge" /> <img src="https://img.shields.io/github/license/your-username/your-repo-name?style=for-the-badge" /> </p>
+
 🌟 About This Repository
 
 This repository is a comprehensive collection of Data Structures and Algorithms (DSA) implementations, notes, and practice problems.
