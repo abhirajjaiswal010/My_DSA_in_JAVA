@@ -8,11 +8,13 @@ class SieveOfEratosthenes {
         // true = number is not prime
         boolean[] isPrime = new boolean[num + 1];
 
+
         sieve(num, isPrime);
     }
 
     // Function to perform sieve
     static void sieve(int n, boolean[] primes) {
+
         // Start from 2 (smallest prime), and go till √n
         for (int i = 2; i * i <= n; i++) {
 
