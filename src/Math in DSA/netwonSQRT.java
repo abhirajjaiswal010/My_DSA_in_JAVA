@@ -1,20 +1,28 @@
-public class netwonSQRT {
-
+class newtonSQRT {
     public static void main(String[] args) {
-        System.out.println(sqrt(40));
+        double n = 40;  // number to find sqrt of
+        double root = sqrt(n);
+        System.out.println("Square root of " + n + " is " + root);
     }
 
+    // Function to compute square root using Newton-Raphson
     static double sqrt(double n) {
+        // Step 1: Start with an initial guess (we take the number itself)
         double x = n;
-        double root;
-        while(true) {
 
-            root = 0.5 * (x + (n / x));
-            if(Math.abs(root - x) < 1) {
-                break;
-            }
-            x = root;
+        // Step 2: Define the tolerance (when to stop iterating)
+        // Smaller epsilon = more accuracy
+        double epsilon = 1e-6;
+
+        // Step 3: Repeat until the difference is small enough
+        // |x^2 - n| < epsilon means we are close enough to sqrt(n)
+        while (Math.abs(x * x - n) > epsilon) {
+            // Newton-Raphson update formula:
+            // x_new = (x + n/x) / 2
+            x = (x + n / x) / 2;
         }
-        return root;
+
+        // Step 4: Return the computed square root
+        return x;
     }
 }
